@@ -1,116 +1,119 @@
-# 🏏 Cricket Live Alerts System
+# 🏏 Cricket Live Alerts
 
-![Python](https://img.shields.io/badge/Python-Backend-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-yellow)
-![HTML](https://img.shields.io/badge/HTML-Structure-orange)
-![CSS](https://img.shields.io/badge/CSS-Styling-blueviolet)
-![Status](https://img.shields.io/badge/Status-Active-success)
+A Python-based desktop application that displays live cricket match scores as popup alerts using web scraping techniques.
 
-A real-time cricket score alert application that delivers instant match updates, live scores, and notifications. Built to provide a fast and seamless experience for cricket enthusiasts.
+## 📌 Project Overview
+Cricket Live Alerts helps users stay updated with ongoing cricket matches without constantly refreshing websites.
+
+This project fetches live cricket data from Cricinfo RSS feeds and displays:
+- Live match details
+- Team names
+- Match scores
+- Match location
+- Match time
+
+A GUI popup automatically shows updated score alerts every 20 seconds.
 
 ---
 
 ## 🚀 Features
-
-* 📡 Real-time cricket score updates
-* 🔔 Instant alerts & notifications
-* 📊 Match details (teams, scores, overs, status)
-* ⚡ Fast and responsive interface
-* 🌐 Multi-match support
+- Fetches live cricket scores
+- Displays available live matches
+- User selects desired match
+- Desktop popup alerts with latest score
+- Auto-refresh every 20 seconds
+- Error handling for invalid inputs and network failures
 
 ---
 
 ## 🛠️ Tech Stack
-
-* **Frontend:** HTML, CSS, JavaScript
-* **Backend:** Python
-* **API:** (Add your API here — e.g., CricAPI / RapidAPI)
-* **Version Control:** Git & GitHub
+- **Language:** Python
+- **Modules Used:**
+  - requests
+  - bs4 (BeautifulSoup)
+  - tkinter
+  - time
+  - sys
 
 ---
 
 ## 📂 Project Structure
-
-cricket-live-alerts/
-│── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   └── script.js
+```bash
+Cricket-Live-Alerts/
 │
-│── backend/
-│   └── app.py
-│
-│── requirements.txt
-│── README.md
-
----
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/akhil-devhub/cricket-live-alerts.git
+├── cricket_live_alerts.py
+├── README.md
+└── requirements.txt
 ```
 
-### 2️⃣ Navigate to project folder
+---
 
+## 📦 Installation
+
+### 1. Clone repository
 ```bash
-cd cricket-live-alerts
+git clone https://github.com/yourusername/Cricket-Live-Alerts.git
+cd Cricket-Live-Alerts
 ```
 
-### 3️⃣ Install dependencies
-
+### 2. Install dependencies
 ```bash
-pip install -r requirements.txt
+pip install requests beautifulsoup4 lxml
 ```
 
-### 4️⃣ Run backend server
-
+### 3. Run project
 ```bash
-python app.py
+python cricket_live_alerts.py
 ```
 
-### 5️⃣ Open frontend
+---
 
-Open `frontend/index.html` in your browser.
+## ▶️ How It Works
+1. Fetches live matches from Cricinfo RSS feed
+2. Displays list of current live matches
+3. User selects match number
+4. Opens GUI popup showing live score
+5. Updates score automatically every 20 seconds
 
 ---
 
-## 📸 Screenshots
-
-*Add your project screenshots here for better presentation*
-
----
-
-## 🔮 Future Enhancements
-
-* 📱 Mobile application
-* 🧠 AI-based match predictions
-* 🌍 Multi-language support
-* 🔊 Voice notifications
+## 📸 Output
+- Live cricket match list in terminal
+- Desktop popup alerts with scores
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
+## 🎯 Learning Outcomes
+Through this project, we learned:
+- Web scraping using BeautifulSoup
+- Working with XML data
+- GUI creation with Tkinter
+- Exception handling
+- API/data fetching using Requests
 
 ---
 
-## 📧 Contact
+## 👨‍💻 Team Members
+- Dheerj Pulime
+- Ganesh Sesha Sai Akhil
 
-📩 Email: [akhil.devhub@gmail.com](mailto:akhil.devhub@gmail.com)
-💻 GitHub: https://github.com/akhil-devhub
 
 ---
 
-## ⭐ Support
+## 📚 References
+- Cricinfo RSS Feed
+- Python Documentation
+- BeautifulSoup Documentation
 
-If you found this project useful, please ⭐ the repository and share it!
+---
+
+## ⭐ Future Improvements
+- Add score notifications in system tray
+- Add match filtering by teams
+- Mobile notifications integration
+- Better GUI dashboard
+
+---
+
+## License
+This project is for academic and learning purposes.
